@@ -1,0 +1,26 @@
+plugins {
+    id 'java'
+}
+
+group 'francis'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+final def var
+var = dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    // https://mvnrepository.com/artifact/commons-httpclient/commons-httpclient
+    compile group: 'commons-httpclient', name: 'commons-httpclient', version: '3.1'
+    // https://mvnrepository.com/artifact/com.googlecode.json-simple/json-simple
+    compile group: 'com.googlecode.json-simple', name: 'json-simple', version: '1.1.1'
+    // https://mvnrepository.com/artifact/commons-io/commons-io
+    compile group: 'commons-io', name: 'commons-io', version: '2.6'
+
+
+}
+
